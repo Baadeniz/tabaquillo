@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabaquillo · Gin de Autor · Merlo, San Luis</title>
+<meta name="description" content="Gin de autor destilado y envasado en el tercer microclima del mundo. Merlo, San Luis, Argentina. Medalla de Plata CopCom 2024 en la categoría Gin de Autor.">
+<meta name="theme-color" content="#0A111E">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tabaquillo · Gin de Autor">
+<meta property="og:description" content="Destilado y envasado en el tercer microclima del mundo. Merlo, San Luis.">
+<meta property="og:image" content="assets/img/hero-sierras.jpg">
+<meta property="og:locale" content="es_AR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/img/hero-sierras.jpg" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20260830">
+
+<script>
+/* Portal de edad — inline y autonomo a proposito.
+   No depende de main.js: si el resto del JS falla, la puerta igual abre. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add("js");
+  var ok = false;
+  try { ok = localStorage.getItem("tq-edad") === "1"; } catch (e) { ok = false; }
+  d.classList.add(ok ? "portal-flash" : "portal-gate");
+  window.__tq = {
+    entrar: function () {
+      try { localStorage.setItem("tq-edad", "1"); } catch (e) {}
+      d.classList.add("portal-out");
+      setTimeout(function () { d.classList.remove("portal-gate", "portal-flash"); }, 900);
+      return false;
+    },
+    salir: function () {
+      document.getElementById("portal-no").hidden = false;
+      return false;
+    }
+  };
+})();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- ============================================================
+     PORTAL — splash + verificacion de edad en una sola pantalla
+     ============================================================ -->
+<div class="portal" id="portal" role="dialog" aria-modal="true" aria-labelledby="portal-t">
+  <div class="portal-veil"></div>
+  <div class="portal-inner">
+
+    <svg class="portal-sello" viewBox="0 0 260 260" aria-hidden="true">
+      <circle class="ps-ring" cx="130" cy="130" r="122" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle class="ps-ring ps-ring--in" cx="130" cy="130" r="112" fill="none" stroke="currentColor" stroke-width=".75"/>
+      <g class="ps-fan" transform="translate(30 62) scale(1)">
+        <path d="M84.28 112.91L5.13 95.54L6.63 89.53L84.67 111.35Z"/>
+        <path d="M85.34 109.53L11.93 75.24L14.71 69.7L86.06 108.1Z"/>
+        <path d="M87.12 106.48L23.01 56.92L26.94 52.12L88.13 105.24Z"/>
+        <path d="M89.52 103.88L37.84 41.47L42.72 37.65L90.78 102.9Z"/>
+        <path d="M92.43 101.88L55.69 29.65L61.3 27L93.88 101.2Z"/>
+        <path d="M95.71 100.56L75.71 22.04L81.75 20.68L97.27 100.21Z"/>
+        <path d="M99.2 100L96.9 19L103.1 19L100.8 100Z"/>
+        <path d="M102.73 100.21L118.25 20.68L124.29 22.04L104.29 100.56Z"/>
+        <path d="M106.12 101.2L138.7 27L144.31 29.65L107.57 101.88Z"/>
+        <path d="M109.22 102.9L157.28 37.65L162.16 41.47L110.48 103.88Z"/>
+        <path d="M111.87 105.24L173.06 52.12L176.99 56.92L112.88 106.48Z"/>
+        <path d="M113.94 108.1L185.29 69.7L188.07 75.24L114.66 109.53Z"/>
+        <path d="M115.33 111.35L193.37 89.53L194.87 95.54L115.72 112.91Z"/>
+        <path d="M83.5 111.89A16.5 16 0 0 1 116.5 111.89L116.5 124A16.5 5 0 0 1 83.5 124Z"/>
+      </g>
+      <path id="arco-arriba" d="M130 130 m-96 0 a96 96 0 0 1 192 0" fill="none"/>
+      <path id="arco-abajo" d="M130 130 m-92 0 a92 92 0 0 0 184 0" fill="none"/>
+      <text class="ps-word"><textPath href="#arco-arriba" startOffset="50%" text-anchor="middle">TABAQUILLO</textPath></text>
+      <text class="ps-word ps-word--sm"><textPath href="#arco-abajo" startOffset="50%" text-anchor="middle">GIN DE AUTOR</textPath></text>
+    </svg>
+
+    <div class="portal-ask">
+      <p class="kicker">Merlo · San Luis · Argentina</p>
+      <p class="portal-title" id="portal-t">¿Sos mayor de 18?</p>
+      <p class="portal-legal">Para entrar tenés que ser mayor de edad. Beber con moderación.</p>
+      <div class="portal-actions">
+        <button type="button" class="btn btn-primary" onclick="return window.__tq.entrar()">Sí, soy mayor</button>
+        <button type="button" class="btn btn-ghost" onclick="return window.__tq.salir()">No</button>
+      </div>
+      <p class="portal-no" id="portal-no" hidden>Volvé cuando cumplas los 18. Te esperamos en las sierras.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<header class="nav" data-nav>
+  <a class="nav-brand" href="#inicio" aria-label="Tabaquillo · inicio">
+    <svg class="nav-mark" viewBox="0 0 200 130" aria-hidden="true">
+      <g fill="currentColor">
+        <path d="M84.28 112.91L5.13 95.54L6.63 89.53L84.67 111.35Z"/>
+        <path d="M85.34 109.53L11.93 75.24L14.71 69.7L86.06 108.1Z"/>
+        <path d="M87.12 106.48L23.01 56.92L26.94 52.12L88.13 105.24Z"/>
+        <path d="M89.52 103.88L37.84 41.47L42.72 37.65L90.78 102.9Z"/>
+        <path d="M92.43 101.88L55.69 29.65L61.3 27L93.88 101.2Z"/>
+        <path d="M95.71 100.56L75.71 22.04L81.75 20.68L97.27 100.21Z"/>
+        <path d="M99.2 100L96.9 19L103.1 19L100.8 100Z"/>
+        <path d="M102.73 100.21L118.25 20.68L124.29 22.04L104.29 100.56Z"/>
+        <path d="M106.12 101.2L138.7 27L144.31 29.65L107.57 101.88Z"/>
+        <path d="M109.22 102.9L157.28 37.65L162.16 41.47L110.48 103.88Z"/>
+        <path d="M111.87 105.24L173.06 52.12L176.99 56.92L112.88 106.48Z"/>
+        <path d="M113.94 108.1L185.29 69.7L188.07 75.24L114.66 109.53Z"/>
+        <path d="M115.33 111.35L193.37 89.53L194.87 95.54L115.72 112.91Z"/>
+        <path d="M83.5 111.89A16.5 16 0 0 1 116.5 111.89L116.5 124A16.5 5 0 0 1 83.5 124Z"/>
+      </g>
+    </svg>
+    <span class="nav-word">Tabaquillo</span>
+  </a>
+
+  <nav class="nav-links" id="menu" aria-label="Principal">
+    <a href="#origen">Origen</a>
+    <a href="#gines">Los gines</a>
+    <a href="#botanicos">Botánicos</a>
+    <a href="#ritual">Ritual</a>
+    <a href="#donde">Dónde</a>
+  </nav>
+
+  <a class="btn btn-primary btn-sm nav-cta" href="#pedidos">Pedir</a>
+
+  <button class="nav-burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú" data-burger>
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="contenido">
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <img src="assets/img/hero-sierras.jpg" alt="" aria-hidden="true" fetchpriority="high" data-parallax="0.18">
+    <div class="hero-tint"></div>
+  </div>
+  <div class="hero-mesh" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="hero-meta reveal">
+      <span class="dot" aria-hidden="true"></span>
+      Merlo · San Luis · Argentina
+    </p>
+
+    <svg class="hero-mark reveal" viewBox="0 0 200 130" role="img" aria-label="Isotipo Tabaquillo">
+      <g fill="currentColor">
+        <path d="M84.28 112.91L5.13 95.54L6.63 89.53L84.67 111.35Z"/>
+        <path d="M85.34 109.53L11.93 75.24L14.71 69.7L86.06 108.1Z"/>
+        <path d="M87.12 106.48L23.01 56.92L26.94 52.12L88.13 105.24Z"/>
+        <path d="M89.52 103.88L37.84 41.47L42.72 37.65L90.78 102.9Z"/>
+        <path d="M92.43 101.88L55.69 29.65L61.3 27L93.88 101.2Z"/>
+        <path d="M95.71 100.56L75.71 22.04L81.75 20.68L97.27 100.21Z"/>
+        <path d="M99.2 100L96.9 19L103.1 19L100.8 100Z"/>
+        <path d="M102.73 100.21L118.25 20.68L124.29 22.04L104.29 100.56Z"/>
+        <path d="M106.12 101.2L138.7 27L144.31 29.65L107.57 101.88Z"/>
+        <path d="M109.22 102.9L157.28 37.65L162.16 41.47L110.48 103.88Z"/>
+        <path d="M111.87 105.24L173.06 52.12L176.99 56.92L112.88 106.48Z"/>
+        <path d="M113.94 108.1L185.29 69.7L188.07 75.24L114.66 109.53Z"/>
+        <path d="M115.33 111.35L193.37 89.53L194.87 95.54L115.72 112.91Z"/>
+        <path d="M83.5 111.89A16.5 16 0 0 1 116.5 111.89L116.5 124A16.5 5 0 0 1 83.5 124Z"/>
+      </g>
+    </svg>
+
+    <h1 class="hero-title reveal" data-split="words">
+      Destilado en el tercer<br>
+      <em>microclima</em> del mundo.
+    </h1>
+
+    <p class="hero-sub reveal">Gin de autor · Sierras de los Comechingones · Est. 2021</p>
+
+    <div class="hero-foot reveal">
+      <p class="hero-award">
+        <span class="hero-award-medal" aria-hidden="true"></span>
+        Medalla de Plata <span class="sep">·</span> CopCom 2024
+        <span class="sep">·</span> categoría Gin de Autor
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#gines">Conocer los gines</a>
+        <a class="btn btn-ghost" href="#donde">Dónde comprarlo</a>
+      </div>
+    </div>
+  </div>
+
+  <a class="hero-scroll" href="#origen" aria-label="Bajar">
+    <span class="hero-scroll-line" aria-hidden="true"></span>
+  </a>
+</section>
+
+<!-- ============================================================
+     ORIGEN
+     ============================================================ -->
+<section class="sec sec-origen" id="origen">
+  <div class="wrap">
+    <p class="kicker reveal">01 — El origen</p>
+    <h2 class="sec-title reveal" data-split="words">
+      Un valle que el aire<br>elige <em>quedarse</em>.
+    </h2>
+
+    <div class="origen-grid">
+      <figure class="origen-fig reveal">
+        <img src="assets/img/lugar-rueda.jpg" alt="Sello de madera de Tabaquillo Gin de Autor en el patio de la destilería, en Merlo." loading="lazy" decoding="async">
+        <figcaption>Merlo, Valle del Conlara. Donde se destila y se envasa.</figcaption>
+      </figure>
+
+      <div class="pilares">
+      <article class="pilar reveal">
+        <span class="pilar-num" aria-hidden="true">i</span>
+        <h3>El microclima</h3>
+        <p>Merlo es célebre por su aire: un valle al pie de los Comechingones donde la presión, la ionización y la amplitud térmica arman una condición rara. Acá se destila y acá se envasa, como dice la etiqueta.</p>
+      </article>
+      <article class="pilar reveal">
+        <span class="pilar-num" aria-hidden="true">ii</span>
+        <h3>El tabaquillo</h3>
+        <p>El árbol que nos da el nombre crece más alto que ningún otro en estas sierras, de corteza en láminas finas y raíz terca. Un bosque que aguanta el frío, el viento y la altura. Nos pareció un buen apellido.</p>
+      </article>
+      <article class="pilar reveal">
+        <span class="pilar-num" aria-hidden="true">iii</span>
+        <h3>De autor</h3>
+        <p>Lotes chicos, receta propia, botella ámbar y corcho. «De autor» no es una categoría de marketing: es una firma. Cada partida se prueba antes de salir, y si no está, no sale.</p>
+      </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOS GINES
+     ============================================================ -->
+<section class="sec sec-gines" id="gines">
+  <div class="halo" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker reveal">02 — La colección</p>
+    <h2 class="sec-title reveal" data-split="words">Línea <em>Boticario</em>.</h2>
+    <p class="sec-lead reveal">Dos destilados que comparten casa y no se parecen en nada. Pasá el cursor —o tocá— para ver qué lleva cada uno.</p>
+
+    <!-- Degradados compartidos por las dos botellas -->
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="vidrio-a" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#4A2A11"/>
+          <stop offset=".22" stop-color="#8A5320"/>
+          <stop offset=".42" stop-color="#C08A3E"/>
+          <stop offset=".62" stop-color="#8A5320"/>
+          <stop offset="1" stop-color="#42250E"/>
+        </linearGradient>
+        <linearGradient id="corcho-a" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#A8834E"/>
+          <stop offset=".45" stop-color="#DCBE8C"/>
+          <stop offset="1" stop-color="#916F40"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="gines">
+
+      <!-- ---------- Boticario Cannabis ---------- -->
+      <article class="gin" style="--v: var(--v-cannabis)" data-flip tabindex="0" aria-label="Boticario Cannabis — ver botánicos">
+        <div class="gin-inner">
+
+          <div class="gin-face gin-face--front">
+            <div class="gin-shot">
+              <svg class="botella" viewBox="0 0 120 340" role="img" aria-label="Botella de Tabaquillo Boticario Cannabis">
+                <rect x="44" y="26" width="32" height="32" rx="4" fill="url(#corcho-a)"/>
+                <rect x="43" y="54" width="34" height="8" rx="3" fill="#2A1808" opacity=".55"/>
+                <path d="M50 60h20v46c16 7 30 20 30 38v178a14 14 0 0 1-14 14H34a14 14 0 0 1-14-14V144c0-18 14-31 30-38z" fill="url(#vidrio-a)"/>
+                <path d="M50 60h20v46c16 7 30 20 30 38v178a14 14 0 0 1-14 14H34a14 14 0 0 1-14-14V144c0-18 14-31 30-38z" fill="none" stroke="#F2EBDA" stroke-opacity=".18"/>
+                <path d="M30 158c0-10 5-19 13-23v182c-8-4-13-11-13-20z" fill="#F6E9C9" opacity=".2"/>
+                <rect x="22" y="182" width="76" height="116" rx="4" fill="#F1E7D2"/>
+                <g fill="#2E3C4E" transform="translate(60 208) scale(.145) translate(-100 -116)">
+                  <path d="M84.28 112.91L5.13 95.54L6.63 89.53L84.67 111.35Z"/>
+                  <path d="M87.12 106.48L23.01 56.92L26.94 52.12L88.13 105.24Z"/>
+                  <path d="M92.43 101.88L55.69 29.65L61.3 27L93.88 101.2Z"/>
+                  <path d="M99.2 100L96.9 19L103.1 19L100.8 100Z"/>
+                  <path d="M106.12 101.2L138.7 27L144.31 29.65L107.57 101.88Z"/>
+                  <path d="M111.87 105.24L173.06 52.12L176.99 56.92L112.88 106.48Z"/>
+                  <path d="M115.33 111.35L193.37 89.53L194.87 95.54L115.72 112.91Z"/>
+                </g>
+                <text class="bot-marca" x="60" y="238" text-anchor="middle" textLength="66" lengthAdjust="spacingAndGlyphs">TABAQUILLO</text>
+                <text class="bot-sub" x="60" y="250" text-anchor="middle" textLength="44" lengthAdjust="spacingAndGlyphs">GIN DE AUTOR</text>
+                <line x1="38" y1="258" x2="82" y2="258" stroke="#2E3C4E" stroke-opacity=".4" stroke-width=".8"/>
+                <text class="bot-est" x="60" y="268" text-anchor="middle" textLength="26" lengthAdjust="spacingAndGlyphs">EST. 2021</text>
+                <rect x="22" y="274" width="76" height="24" rx="3" fill="var(--v)"/>
+                <text class="bot-banda" x="60" y="289" text-anchor="middle" textLength="44" lengthAdjust="spacingAndGlyphs">BOTICARIO</text>
+              </svg>
+            </div>
+
+            <div class="gin-id">
+              <p class="gin-linea">Boticario</p>
+              <h3 class="gin-nombre">Cannabis</h3>
+              <p class="gin-nota">Herbáceo y seco. La cáscara de limón levanta, la manzanilla redondea, el cannabis deja la firma vegetal al final.</p>
+              <p class="gin-flip"><span aria-hidden="true">↻</span> Ver botánicos</p>
+            </div>
+          </div>
+
+          <div class="gin-face gin-face--back">
+            <p class="gin-linea">Boticario · Cannabis</p>
+            <h4>En la receta</h4>
+            <ul class="gin-bot">
+              <li>Cardamomo</li><li>Coriandro</li><li>Pimienta de Jamaica</li>
+              <li>Manzanilla</li><li>Piel de limón</li><li>Cannabis</li>
+            </ul>
+            <h4>Para servirlo</h4>
+            <p class="gin-serve">Copa balón, mucho hielo, 50&nbsp;ml. Tónica seca y una tira larga de piel de limón, retorcida sobre el vaso.</p>
+            <a class="btn btn-primary btn-sm" href="#pedidos">Pedir esta botella</a>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ---------- Boticario Mandarina ---------- -->
+      <article class="gin" style="--v: var(--v-mandarina)" data-flip tabindex="0" aria-label="Boticario Mandarina — ver botánicos">
+        <div class="gin-inner">
+
+          <div class="gin-face gin-face--front">
+            <div class="gin-shot">
+              <svg class="botella" viewBox="0 0 120 340" role="img" aria-label="Botella de Tabaquillo Boticario Mandarina">
+                <rect x="44" y="26" width="32" height="32" rx="4" fill="url(#corcho-a)"/>
+                <rect x="43" y="54" width="34" height="8" rx="3" fill="#2A1808" opacity=".55"/>
+                <path d="M50 60h20v46c16 7 30 20 30 38v178a14 14 0 0 1-14 14H34a14 14 0 0 1-14-14V144c0-18 14-31 30-38z" fill="url(#vidrio-a)"/>
+                <path d="M50 60h20v46c16 7 30 20 30 38v178a14 14 0 0 1-14 14H34a14 14 0 0 1-14-14V144c0-18 14-31 30-38z" fill="none" stroke="#F2EBDA" stroke-opacity=".18"/>
+                <path d="M30 158c0-10 5-19 13-23v182c-8-4-13-11-13-20z" fill="#F6E9C9" opacity=".2"/>
+                <rect x="22" y="182" width="76" height="116" rx="4" fill="#F1E7D2"/>
+                <g fill="#2E3C4E" transform="translate(60 208) scale(.145) translate(-100 -116)">
+                  <path d="M84.28 112.91L5.13 95.54L6.63 89.53L84.67 111.35Z"/>
+                  <path d="M87.12 106.48L23.01 56.92L26.94 52.12L88.13 105.24Z"/>
+                  <path d="M92.43 101.88L55.69 29.65L61.3 27L93.88 101.2Z"/>
+                  <path d="M99.2 100L96.9 19L103.1 19L100.8 100Z"/>
+                  <path d="M106.12 101.2L138.7 27L144.31 29.65L107.57 101.88Z"/>
+                  <path d="M111.87 105.24L173.06 52.12L176.99 56.92L112.88 106.48Z"/>
+                  <path d="M115.33 111.35L193.37 89.53L194.87 95.54L115.72 112.91Z"/>
+                </g>
+                <text class="bot-marca" x="60" y="238" text-anchor="middle" textLength="66" lengthAdjust="spacingAndGlyphs">TABAQUILLO</text>
+                <text class="bot-sub" x="60" y="250" text-anchor="middle" textLength="44" lengthAdjust="spacingAndGlyphs">GIN DE AUTOR</text>
+                <line x1="38" y1="258" x2="82" y2="258" stroke="#2E3C4E" stroke-opacity=".4" stroke-width=".8"/>
+                <text class="bot-est" x="60" y="268" text-anchor="middle" textLength="26" lengthAdjust="spacingAndGlyphs">EST. 2021</text>
+                <rect x="22" y="274" width="76" height="24" rx="3" fill="var(--v)"/>
+                <text class="bot-banda" x="60" y="289" text-anchor="middle" textLength="44" lengthAdjust="spacingAndGlyphs">BOTICARIO</text>
+              </svg>
+            </div>
+
+            <div class="gin-id">
+              <p class="gin-linea">Boticario</p>
+              <h3 class="gin-nombre">Mandarina</h3>
+              <p class="gin-nota">Cítrico y floral. Entra dulce por la mandarina, la lavanda lo estira y el enebro lo trae de vuelta a tierra.</p>
+              <p class="gin-flip"><span aria-hidden="true">↻</span> Ver botánicos</p>
+            </div>
+          </div>
+
+          <div class="gin-face gin-face--back">
+            <p class="gin-linea">Boticario · Mandarina</p>
+            <h4>En la receta</h4>
+            <ul class="gin-bot">
+              <li>Enebro</li><li>Cardamomo</li><li>Lavanda</li>
+              <li>Manzanilla</li><li>Mandarina</li><li>Especias</li>
+            </ul>
+            <h4>Para servirlo</h4>
+            <p class="gin-serve">Copa balón, mucho hielo, 50&nbsp;ml. Tónica neutra, media rodaja de mandarina y una rama de lavanda golpeada.</p>
+            <a class="btn btn-primary btn-sm" href="#pedidos">Pedir esta botella</a>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BOTANICOS — scroll horizontal anclado
+     ============================================================ -->
+<section class="sec sec-bot" id="botanicos" data-showcase>
+  <div class="wrap wrap--head">
+    <p class="kicker reveal">03 — El botiquín</p>
+    <h2 class="sec-title reveal" data-split="words">Diez cosas que <em>huelen</em>.</h2>
+    <p class="sec-lead reveal">La despensa de la que salen las dos recetas. Seguí bajando: el estante se mueve solo.</p>
+  </div>
+
+  <div class="show-viewport">
+    <div class="show-track" data-track>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 6v46M32 14l-12-6M32 14l12-6M32 26l-14-7M32 26l14-7M32 38l-11-6M32 38l11-6"/>
+          <circle cx="22" cy="47" r="5.5"/><circle cx="41" cy="43" r="4.5"/><circle cx="33" cy="55" r="3.5"/>
+        </svg>
+        <p class="bnum">01</p><h3>Enebro</h3>
+        <p>La columna vertebral. Sin esto es aguardiente, no gin: resina, pino y un fondo casi mentolado.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 56V34"/>
+          <path d="M32 34 8 16M32 34l24-18M32 34 14 34M32 34h18M32 34 18 48M32 34l14 14"/>
+          <circle cx="8" cy="16" r="3"/><circle cx="56" cy="16" r="3"/><circle cx="14" cy="34" r="3"/>
+          <circle cx="50" cy="34" r="3"/><circle cx="18" cy="48" r="3"/><circle cx="46" cy="48" r="3"/>
+        </svg>
+        <p class="bnum">02</p><h3>Coriandro</h3>
+        <p>Semilla, no hoja. Aporta el cítrico seco y esa nota de nuez que empalma el enebro con las cáscaras.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 8c9 8 13 18 13 26s-4 17-13 22c-9-5-13-14-13-22S23 16 32 8Z"/>
+          <path d="M32 10v44M25 20c3 6 3 20 0 28M39 20c-3 6-3 20 0 28"/>
+          <path d="M32 8c0-3 2-5 5-6"/>
+        </svg>
+        <p class="bnum">03</p><h3>Cardamomo</h3>
+        <p>Vaina verde abierta a último momento. Eucalipto, alcanfor y un dulzor que no llega a ser dulce.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="21" cy="40" r="11"/><circle cx="43" cy="34" r="9"/><circle cx="33" cy="53" r="7"/>
+          <path d="M21 29c0-6 3-10 8-13M43 25c0-5 2-8 6-11"/>
+        </svg>
+        <p class="bnum">04</p><h3>Pimienta de Jamaica</h3>
+        <p>Una sola baya con clavo, canela y nuez moscada adentro. Da el calor del final de boca.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="30" r="7"/>
+          <g><path d="M32 23V9M32 37v14M25 30H11M39 30h14M27 25 17 15M37 35l10 10M37 25l10-10M27 35 17 45"/></g>
+          <path d="M32 51c-2 5-2 8 0 11"/>
+        </svg>
+        <p class="bnum">05</p><h3>Manzanilla</h3>
+        <p>La que redondea. Baja los filos del alcohol y deja una cama floral, casi de té, debajo de todo.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M46 12c-14 0-25 8-25 20 0 9 6 15 14 15 7 0 12-4 12-10 0-5-4-8-8-8-4 0-6 2-6 5"/>
+          <path d="M46 12c4 8 4 20 0 28M35 16c3 7 3 17 0 24"/>
+        </svg>
+        <p class="bnum">06</p><h3>Piel de limón</h3>
+        <p>Solo la parte amarilla, nunca lo blanco. Aceite esencial puro: lo que hace que el trago huela antes de tocarte.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 58V32"/>
+          <path d="M32 32c-5-2-8-6-8-11s3-9 8-11c5 2 8 6 8 11s-3 9-8 11Z"/>
+          <path d="M26 40c-4-1-6-4-6-7M38 40c4-1 6-4 6-7M27 50c-4-1-6-3-6-6M37 50c4-1 6-3 6-6"/>
+        </svg>
+        <p class="bnum">07</p><h3>Lavanda</h3>
+        <p>Peligrosa de más: en gramos justos es perfume, en gramos de más es jabón. Acá está medida.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="30" cy="38" r="17"/>
+          <path d="M30 21c0-6 4-10 10-12 1 7-3 12-10 12Z"/>
+          <path d="M30 25v26M17 38h26M21 29l18 18M39 29 21 47" opacity=".55"/>
+        </svg>
+        <p class="bnum">08</p><h3>Mandarina</h3>
+        <p>Más blanda y más golosa que la naranja. Es la que le da el nombre y el color de banda a la segunda etiqueta.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="6"/>
+          <path d="M32 26c-3-8-1-16 0-18 1 2 3 10 0 18ZM38 32c8-3 16-1 18 0-2 1-10 3-18 0ZM32 38c3 8 1 16 0 18-1-2-3-10 0-18ZM26 32c-8 3-16 1-18 0 2-1 10-3 18 0Z"/>
+          <path d="M36 28c6-6 13-8 15-8-1 2-4 9-10 12M28 36c-6 6-13 8-15 8 1-2 4-9 10-12"/>
+        </svg>
+        <p class="bnum">09</p><h3>Hibiscus</h3>
+        <p>Acidez roja y un tanino corto. Trabaja el color y el borde ácido cuando la receta lo pide.</p>
+      </article>
+
+      <article class="bcard">
+        <svg class="bico" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 58V36"/>
+          <path d="M32 36 12 22M32 36l20-14M32 36 20 14M32 36l12-22M32 36V12"/>
+          <path d="M12 22c-2-3-2-5-1-7 2 1 3 3 3 6M52 22c2-3 2-5 1-7-2 1-3 3-3 6M20 14c-1-3-1-5 0-7 2 1 3 4 3 6M44 14c1-3 1-5 0-7-2 1-3 4-3 6M32 12c0-3 1-5 2-6 1 1 2 4 2 6"/>
+        </svg>
+        <p class="bnum">10</p><h3>Hinojo</h3>
+        <p>Anís seco, sin caramelo. Alarga el trago y hace que el segundo sorbo se parezca poco al primero.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RITUAL
+     ============================================================ -->
+<section class="sec sec-ritual" id="ritual">
+  <div class="wrap ritual-grid">
+    <div class="ritual-txt">
+      <p class="kicker reveal">04 — El ritual</p>
+      <h2 class="sec-title reveal" data-split="words">Cuatro pasos y<br>nada <em>más</em>.</h2>
+      <ol class="pasos">
+        <li class="reveal"><span class="paso-n">1</span><div><h3>Copa balón, bien fría</h3><p>Al freezer diez minutos. Si la copa está tibia, el hielo se rinde antes del primer sorbo.</p></div></li>
+        <li class="reveal"><span class="paso-n">2</span><div><h3>Hielo hasta el borde</h3><p>Cubos grandes y muchos. Poco hielo derrite más rápido: contra toda intuición, más hielo aguada menos.</p></div></li>
+        <li class="reveal"><span class="paso-n">3</span><div><h3>50 ml de Tabaquillo</h3><p>Servido sobre el hielo, sin apuro. Olé la copa antes de seguir: ahí está la mitad del gin.</p></div></li>
+        <li class="reveal"><span class="paso-n">4</span><div><h3>Tónica y garnish</h3><p>Volcada por la cuchara para no matar el gas. Limón para el Cannabis, mandarina y lavanda para el otro.</p></div></li>
+      </ol>
+    </div>
+    <figure class="ritual-fig reveal">
+      <img src="assets/img/ritual-botanicos.jpg" alt="Copa de Tabaquillo servida junto a la botella y una caja de botánicos con enebro, cítricos deshidratados y especias." loading="lazy" decoding="async">
+      <figcaption>La caja de botánicos, la copa grabada y la botella. El equipo completo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================
+     PREMIO
+     ============================================================ -->
+<section class="sec sec-premio">
+  <div class="halo" aria-hidden="true"></div>
+  <div class="wrap premio-grid">
+    <figure class="premio-fig reveal">
+      <img src="assets/img/botella-mandarina.jpg" alt="Botella de Tabaquillo Boticario Mandarina junto al certificado de la medalla de plata CopCom 2024." loading="lazy" decoding="async">
+    </figure>
+    <div class="premio-txt">
+      <p class="kicker reveal">05 — El reconocimiento</p>
+      <blockquote class="premio-quote reveal" data-split="words">
+        «Medalla de <em>Plata</em>, categoría Gin de Autor.»
+      </blockquote>
+      <p class="premio-fuente reveal">CopCom 2024</p>
+      <p class="premio-nota reveal">Lo dejamos acá porque es lo único que dice alguien que no somos nosotros. El resto de esta página lo escribimos nosotros, así que descontá lo que corresponda.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DONDE
+     ============================================================ -->
+<section class="sec sec-donde" id="donde">
+  <div class="wrap">
+    <p class="kicker reveal">06 — Dónde encontrarlo</p>
+    <h2 class="sec-title reveal" data-split="words">De las sierras<br>para <em>abajo</em>.</h2>
+    <p class="sec-lead reveal">Estamos en góndola, en carta y en la puerta de casa. Si tu ciudad no está en la lista, escribinos igual: llegamos por encomienda.</p>
+
+    <ul class="plazas">
+      <li class="plaza reveal"><span class="plaza-n" aria-hidden="true">01</span><h3>Merlo</h3><p>San Luis · casa matriz</p></li>
+      <li class="plaza reveal"><span class="plaza-n" aria-hidden="true">02</span><h3>Carpintería</h3><p>San Luis</p></li>
+      <li class="plaza reveal"><span class="plaza-n" aria-hidden="true">03</span><h3>Salto</h3><p>Buenos Aires</p></li>
+      <li class="plaza reveal"><span class="plaza-n" aria-hidden="true">04</span><h3>Pergamino</h3><p>Buenos Aires</p></li>
+      <li class="plaza reveal"><span class="plaza-n" aria-hidden="true">05</span><h3>CABA y AMBA</h3><p>Buenos Aires</p></li>
+      <li class="plaza plaza--cta reveal"><h3>¿Tu ciudad no está?</h3><p>Mandamos a todo el país.</p><a class="btn btn-ghost btn-sm" href="#pedidos">Consultar envío</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     PEDIDOS
+     ============================================================ -->
+<section class="sec sec-pedidos" id="pedidos">
+  <div class="halo" aria-hidden="true"></div>
+  <div class="wrap pedidos-grid">
+
+    <div class="pedidos-txt">
+      <p class="kicker reveal">07 — Pedidos</p>
+      <h2 class="sec-title reveal" data-split="words">Escribinos y<br>lo <em>arreglamos</em>.</h2>
+      <p class="sec-lead reveal">Botella suelta, caja para regalo, carta de bar o distribución por zona. Completá y se abre WhatsApp con el mensaje ya redactado.</p>
+
+      <ul class="pedidos-datos">
+        <li class="reveal"><span>WhatsApp</span><a href="#" data-wa-link>Abrir chat</a></li>
+        <li class="reveal"><span>Instagram</span><a href="https://www.instagram.com/tabaquillogindeautor/" target="_blank" rel="noopener">@tabaquillogindeautor</a></li>
+        <li class="reveal"><span>Dónde estamos</span><p>Merlo, San Luis, Argentina</p></li>
+      </ul>
+    </div>
+
+    <form class="pedido-form reveal" data-form novalidate>
+      <div class="campo">
+        <label for="f-nombre">Nombre</label>
+        <input id="f-nombre" name="nombre" type="text" required autocomplete="name" placeholder="Cómo te llamás">
+      </div>
+
+      <div class="campo">
+        <label for="f-lugar">Ciudad</label>
+        <input id="f-lugar" name="lugar" type="text" required autocomplete="address-level2" placeholder="Desde dónde escribís">
+      </div>
+
+      <fieldset class="campo campo--radios">
+        <legend>Qué necesitás</legend>
+        <div class="radios">
+          <label><input type="radio" name="tipo" value="Una botella" checked><span>Una botella</span></label>
+          <label><input type="radio" name="tipo" value="Caja regalo"><span>Caja regalo</span></label>
+          <label><input type="radio" name="tipo" value="Carta de bar / restaurante"><span>Bar o resto</span></label>
+          <label><input type="radio" name="tipo" value="Distribución por zona"><span>Distribución</span></label>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="f-msg">Mensaje <span class="opt">(opcional)</span></label>
+        <textarea id="f-msg" name="mensaje" rows="3" placeholder="Cuántas, para cuándo, algo especial…"></textarea>
+      </div>
+
+      <button class="btn btn-primary btn-block" type="submit">
+        <span class="btn-label">Abrir WhatsApp</span>
+        <svg class="btn-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5 9.5 18 20 7"/></svg>
+      </button>
+      <p class="form-nota" data-form-nota role="status">Se abre tu WhatsApp con el mensaje escrito. Nada se envía desde acá.</p>
+    </form>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="pie">
+  <div class="wrap">
+    <div class="pie-top">
+      <div class="pie-marca">
+        <svg class="pie-mark" viewBox="0 0 200 130" aria-hidden="true">
+          <g fill="currentColor">
+            <path d="M84.28 112.91L5.13 95.54L6.63 89.53L84.67 111.35Z"/>
+            <path d="M85.34 109.53L11.93 75.24L14.71 69.7L86.06 108.1Z"/>
+            <path d="M87.12 106.48L23.01 56.92L26.94 52.12L88.13 105.24Z"/>
+            <path d="M89.52 103.88L37.84 41.47L42.72 37.65L90.78 102.9Z"/>
+            <path d="M92.43 101.88L55.69 29.65L61.3 27L93.88 101.2Z"/>
+            <path d="M95.71 100.56L75.71 22.04L81.75 20.68L97.27 100.21Z"/>
+            <path d="M99.2 100L96.9 19L103.1 19L100.8 100Z"/>
+            <path d="M102.73 100.21L118.25 20.68L124.29 22.04L104.29 100.56Z"/>
+            <path d="M106.12 101.2L138.7 27L144.31 29.65L107.57 101.88Z"/>
+            <path d="M109.22 102.9L157.28 37.65L162.16 41.47L110.48 103.88Z"/>
+            <path d="M111.87 105.24L173.06 52.12L176.99 56.92L112.88 106.48Z"/>
+            <path d="M113.94 108.1L185.29 69.7L188.07 75.24L114.66 109.53Z"/>
+            <path d="M115.33 111.35L193.37 89.53L194.87 95.54L115.72 112.91Z"/>
+            <path d="M83.5 111.89A16.5 16 0 0 1 116.5 111.89L116.5 124A16.5 5 0 0 1 83.5 124Z"/>
+          </g>
+        </svg>
+        <p class="pie-nombre">Tabaquillo<span>Gin de Autor</span></p>
+      </div>
+
+      <nav class="pie-nav" aria-label="Pie">
+        <a href="#origen">Origen</a>
+        <a href="#gines">Los gines</a>
+        <a href="#botanicos">Botánicos</a>
+        <a href="#ritual">Ritual</a>
+        <a href="#donde">Dónde</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="https://www.instagram.com/tabaquillogindeautor/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+
+    <p class="pie-legal">
+      <strong>Beber con moderación.</strong> Prohibida la venta de bebidas alcohólicas a menores de 18 años (Ley&nbsp;24.788).
+      No consumas alcohol si vas a conducir, si estás embarazada o si estás bajo tratamiento médico.
+    </p>
+
+    <p class="pie-fin">
+      <span>© <span data-anio>2026</span> Tabaquillo Gin de Autor · Merlo, San Luis, Argentina</span>
+      <span class="pie-cred" data-creditos><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">Foto del cielo: National Park Service · CC0</a></span>
+    </p>
+  </div>
+</footer>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js?v=20260830"></script>
+<script defer src="main.js?v=20260830"></script>
+</body>
+</html>
