@@ -1,7 +1,12 @@
 /* =============================================================
    TABAQUILLO · GIN DE AUTOR
-   Editorial diurno — beige cálido, tinta parda y oro viejo.
+   Editorial diurno — beige cálido, tinta parda y oro viejo,
+   con el azul del sello como único acento frío.
    Paleta tomada del sello de la marca y de la etiqueta Boticario.
+
+   Reparto de color: el oro es la marca y la acción (botón de pedido,
+   sello, destacados). El azul es la estructura y la interacción
+   (contornos, foco, selección, subrayados, estado activo).
    ============================================================= */
 
 /* =============================================================
@@ -29,8 +34,18 @@
   --v-cannabis:  #4E6B39;
   --v-mandarina: #9C4F19;
 
-  --line:      rgba(26, 23, 16, .14);
-  --line-2:    rgba(26, 23, 16, .07);
+  /* Azul de marca: el del sello de la etiqueta y el de la rueda del patio.
+     Unico color frio de la paleta; hace de contrapunto al beige. */
+  --blue:      #2E3C4E;   /* fondo: el del sello de la etiqueta */
+  --blue-mid:  #3C5F86;   /* trazo: el unico que sigue leyendose azul sobre el beige */
+  --blue-soft: #4A78B2;   /* aire, heredado del hero nocturno */
+  --blue-deep: #1B2A43;   /* tinta: cifras y textos en azul */
+
+  /* Filetes en azul. Van sobre --blue-mid: diluir el azul del sello
+     lo apaga a gris, porque tiene muy poco croma. */
+  --line:        rgba(60, 95, 134, .30);
+  --line-2:      rgba(60, 95, 134, .16);
+  --line-acento: #3C5F86;
 
   --sans:  "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
@@ -88,10 +103,13 @@ a { color: inherit; text-decoration: none; }
 p { text-wrap: pretty; }
 ul, ol { list-style: none; padding: 0; }
 
-::selection { background: var(--accent); color: var(--bg); }
+/* Controles nativos (checks, radios, barras) heredan el azul. */
+:root { accent-color: var(--blue-mid); caret-color: var(--blue-mid); }
+
+::selection { background: var(--blue); color: #F4EEE0; }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--blue-mid);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -207,13 +225,14 @@ h1 em, h2 em, blockquote em {
 }
 
 .btn-ghost {
-  border: 1px solid var(--line);
-  color: var(--cream);
+  border: 1px solid var(--line-acento);
+  color: var(--blue-deep);
   background: rgba(26, 23, 16, .03);
 }
 .btn-ghost:hover {
-  border-color: var(--accent);
-  color: var(--gold);
+  border-color: var(--blue-mid);
+  color: var(--blue-deep);
+  background: rgba(60, 95, 134, .07);
   transform: translateY(-2px);
 }
 
@@ -345,7 +364,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   position: absolute;
   left: 0; bottom: 0;
   width: 100%; height: 1px;
-  background: var(--accent);
+  background: var(--blue-mid);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .5s var(--ease-out);
@@ -546,7 +565,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   gap: clamp(1.8rem, 3vw, 2.6rem);
 }
 .pilar {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line-acento);
   padding-top: clamp(1.4rem, 2.5vw, 2rem);
 }
 .pilar-num {
@@ -713,7 +732,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
 }
 .gin-bot li {
   padding: .38rem .8rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-acento);
   border-radius: 100px;
   font-size: .78rem;
   color: var(--cream);
@@ -734,12 +753,12 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   overflow-y: visible;
   scroll-snap-type: x proximity;
   scrollbar-width: thin;
-  scrollbar-color: var(--accent) transparent;
+  scrollbar-color: var(--blue-mid) transparent;
   padding: 1rem var(--gut) 2.5rem;
 }
 .show-viewport::-webkit-scrollbar { height: 3px; }
 .show-viewport::-webkit-scrollbar-track { background: var(--line-2); }
-.show-viewport::-webkit-scrollbar-thumb { background: var(--accent); }
+.show-viewport::-webkit-scrollbar-thumb { background: var(--blue-mid); }
 
 .show-track { display: flex; gap: 1.1rem; width: max-content; }
 
@@ -764,7 +783,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   transition: border-color .6s var(--ease-out), transform .7s var(--ease-out), background-color .6s var(--ease-out);
 }
 .bcard:hover {
-  border-color: rgba(105, 82, 30, .5);
+  border-color: var(--blue-mid);
   transform: translateY(-6px);
 }
 .bico {
@@ -801,11 +820,11 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   display: grid;
   place-items: center;
   width: 34px; height: 34px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-acento);
   border-radius: 50%;
   font-family: var(--serif);
   font-size: .9rem;
-  color: var(--accent);
+  color: var(--blue-deep);
 }
 .pasos h3 { font-size: 1.12rem; margin-bottom: .3rem; }
 .pasos p { font-size: .92rem; color: var(--cream-2); }
@@ -862,7 +881,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   padding: clamp(1.6rem, 3vw, 2.4rem);
   transition: background-color .6s var(--ease-out);
 }
-.plaza:hover { background: var(--bg-3); }
+.plaza:hover { background: color-mix(in srgb, var(--blue) 7%, var(--bg-3)); }
 .plaza-n {
   display: block;
   font-size: .66rem;
@@ -923,7 +942,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
 .campo input[type="text"], .campo textarea {
   width: 100%;
   padding: .85rem 1rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-acento);
   border-radius: 4px;
   background: rgba(255, 252, 245, .62);
   color: var(--cream);
@@ -935,8 +954,9 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
 .campo input::placeholder, .campo textarea::placeholder { color: rgba(94, 85, 69, .85); }
 .campo input:focus, .campo textarea:focus {
   outline: none;
-  border-color: var(--accent);
-  background: rgba(255, 252, 245, .9);
+  border-color: var(--blue-mid);
+  box-shadow: 0 0 0 3px rgba(60, 95, 134, .18);
+  background: rgba(255, 252, 245, .95);
 }
 .campo textarea { resize: vertical; min-height: 88px; }
 .campo.is-error input, .campo.is-error textarea { border-color: #A8382A; }
@@ -953,8 +973,8 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   color: var(--cream-2);
   transition: all .4s var(--ease-out);
 }
-.radios input:checked + span { border-color: var(--accent); color: var(--bg); background: var(--accent); }
-.radios input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 3px; }
+.radios input:checked + span { border-color: var(--blue); color: #F4EEE0; background: var(--blue); }
+.radios input:focus-visible + span { outline: 2px solid var(--blue-mid); outline-offset: 3px; }
 
 .pedido-form .btn-primary { position: relative; overflow: hidden; margin-top: .4rem; }
 .btn-label { transition: opacity .35s var(--ease-out), transform .45s var(--ease-out); }
@@ -1023,7 +1043,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   font-size: .72rem;
   color: var(--cream-3);
 }
-.pie-cred a { border-bottom: 1px solid var(--line); }
+.pie-cred a { border-bottom: 1px solid var(--line-acento); }
 
 /* =============================================================
    7. EFECTOS (reveals + split)
