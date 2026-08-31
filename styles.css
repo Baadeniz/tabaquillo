@@ -1,6 +1,6 @@
 /* =============================================================
    TABAQUILLO · GIN DE AUTOR
-   Editorial nocturno — azul noche, crema y oro pálido.
+   Editorial diurno — beige cálido, tinta parda y oro viejo.
    Paleta tomada del sello de la marca y de la etiqueta Boticario.
    ============================================================= */
 
@@ -8,29 +8,29 @@
    1. TOKENS
    ============================================================= */
 :root {
-  /* Fondos: azul noche, nunca negro puro */
-  --bg:        #0A111E;
-  --bg-2:      #0E1728;
-  --bg-3:      #142136;
-  --bg-4:      #1B2A43;
-  --bg-pie:    #070C16;
+  /* Fondos: beige editorial, nunca blanco puro */
+  --bg:        #F0E8D8;
+  --bg-2:      #E9E0CC;
+  --bg-3:      #E1D6BE;
+  --bg-4:      #D8CBB0;
+  --bg-pie:    #E3D9C4;
 
   /* Tinta */
-  --cream:     #F2EBDA;
-  --cream-2:   #CFC4AC;
-  --cream-3:   #7F8FA8;
+  --cream:     #1A1710;
+  --cream-2:   #2E2820;
+  --cream-3:   #5E5545;
 
   /* Acentos de marca */
-  --accent:    #C9A24B;
-  --accent-2:  #A8843A;
-  --gold:      #E3D3A6;
+  --accent:    #69521E;
+  --accent-2:  #634E1C;
+  --gold:      #856A26;
 
   /* Variedades (bandas de etiqueta) */
-  --v-cannabis:  #6E9153;
-  --v-mandarina: #D97A34;
+  --v-cannabis:  #4E6B39;
+  --v-mandarina: #9C4F19;
 
-  --line:      rgba(242, 235, 218, .12);
-  --line-2:    rgba(242, 235, 218, .06);
+  --line:      rgba(26, 23, 16, .14);
+  --line-2:    rgba(26, 23, 16, .07);
 
   --sans:  "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
@@ -123,9 +123,9 @@ ul, ol { list-style: none; padding: 0; }
   position: absolute;
   inset: -30% -6% -20% -6%;
   background: radial-gradient(closest-side circle at 50% 50%,
-    rgba(201, 162, 75, .17) 0%,
-    rgba(201, 162, 75, .09) 38%,
-    rgba(201, 162, 75, .03) 62%,
+    rgba(105, 82, 30, .17) 0%,
+    rgba(105, 82, 30, .09) 38%,
+    rgba(105, 82, 30, .03) 62%,
     transparent 80%);
   pointer-events: none;
   z-index: 0;
@@ -197,19 +197,19 @@ h1 em, h2 em, blockquote em {
 
 .btn-primary {
   background: var(--accent);
-  color: #14100A;
-  box-shadow: 0 0 0 0 rgba(201, 162, 75, .4);
+  color: #F6F1E4;
+  box-shadow: 0 0 0 0 rgba(105, 82, 30, .4);
 }
 .btn-primary:hover {
   background: var(--gold);
   transform: translateY(-2px);
-  box-shadow: 0 14px 34px -14px rgba(201, 162, 75, .7);
+  box-shadow: 0 14px 34px -14px rgba(105, 82, 30, .7);
 }
 
 .btn-ghost {
   border: 1px solid var(--line);
   color: var(--cream);
-  background: rgba(242, 235, 218, .02);
+  background: rgba(26, 23, 16, .03);
 }
 .btn-ghost:hover {
   border-color: var(--accent);
@@ -241,7 +241,7 @@ html.portal-flash .portal { animation: portalSafety .01s 2.6s forwards; }
 .portal-veil {
   position: absolute; inset: 0;
   background:
-    radial-gradient(60% 50% at 50% 42%, #14213A 0%, var(--bg) 60%, #05090F 100%);
+    radial-gradient(60% 50% at 50% 42%, #EFE6D2 0%, var(--bg) 60%, #DCCFB2 100%);
 }
 .portal-inner { position: relative; z-index: 1; }
 
@@ -311,11 +311,11 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
 }
 .nav.is-stuck {
   height: 62px;
-  background: rgba(10, 17, 30, .82);
+  background: rgba(240, 232, 216, .82);
   border-bottom-color: var(--line-2);
 }
 @supports (backdrop-filter: blur(14px)) {
-  .nav.is-stuck { background: rgba(10, 17, 30, .55); backdrop-filter: blur(16px) saturate(140%); }
+  .nav.is-stuck { background: rgba(240, 232, 216, .55); backdrop-filter: blur(16px) saturate(140%); }
 }
 
 .nav-brand { display: flex; align-items: center; gap: .7rem; margin-right: auto; }
@@ -353,7 +353,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
 .nav-links a:hover { color: var(--cream); }
 .nav-links a:hover::after,
 .nav-links a.is-current::after { transform: scaleX(1); transform-origin: left; }
-.nav-links a.is-current { color: var(--gold); }
+.nav-links a.is-current { color: var(--accent); }
 
 .nav-burger { display: none; width: 40px; height: 40px; position: relative; }
 .nav-burger span {
@@ -390,8 +390,8 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
 .hero-tint {
   position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, rgba(10, 17, 30, .78) 0%, rgba(10, 17, 30, .5) 42%, rgba(10, 17, 30, .96) 100%),
-    radial-gradient(70% 55% at 50% 45%, rgba(20, 33, 58, .25), rgba(10, 17, 30, .85) 100%);
+    linear-gradient(180deg, rgba(240, 232, 216, .78) 0%, rgba(240, 232, 216, .5) 42%, rgba(240, 232, 216, .96) 100%),
+    radial-gradient(70% 55% at 50% 45%, rgba(216, 203, 176, .25), rgba(240, 232, 216, .85) 100%);
 }
 
 .hero-mesh {
@@ -401,11 +401,11 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   pointer-events: none;
   opacity: .85;
   background:
-    radial-gradient(36% 28% at 24% 30%, rgba(201, 162, 75, .26), transparent 70%),
-    radial-gradient(32% 26% at 76% 64%, rgba(74, 120, 178, .30), transparent 72%),
+    radial-gradient(36% 28% at 24% 30%, rgba(105, 82, 30, .26), transparent 70%),
+    radial-gradient(32% 26% at 76% 64%, rgba(156, 79, 25, .18), transparent 72%),
     conic-gradient(from var(--mesh-a) at 50% 52%,
-      rgba(201, 162, 75, .12), rgba(10, 17, 30, 0) 28%,
-      rgba(90, 135, 190, .16) 58%, rgba(201, 162, 75, .12) 100%);
+      rgba(105, 82, 30, .12), rgba(240, 232, 216, 0) 28%,
+      rgba(78, 107, 57, .14) 58%, rgba(105, 82, 30, .12) 100%);
   filter: blur(46px);
   animation: meshTurn 28s linear infinite;
 }
@@ -438,15 +438,15 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   animation: latido 2.6s ease-in-out infinite;
 }
 @keyframes latido {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(201, 162, 75, .55); }
-  50%      { opacity: .55; box-shadow: 0 0 0 7px rgba(201, 162, 75, 0); }
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(105, 82, 30, .55); }
+  50%      { opacity: .55; box-shadow: 0 0 0 7px rgba(105, 82, 30, 0); }
 }
 
 .hero-mark {
   width: clamp(96px, 15vw, 148px);
   margin: 0 auto 1.6rem;
   color: var(--gold);
-  filter: drop-shadow(0 6px 26px rgba(201, 162, 75, .28));
+  filter: drop-shadow(0 6px 26px rgba(105, 82, 30, .28));
 }
 
 .hero-title {
@@ -479,8 +479,8 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
 .hero-award-medal {
   width: 9px; height: 9px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #E8E8EA, #9AA0A8);
-  box-shadow: 0 0 0 3px rgba(232, 232, 234, .1);
+  background: linear-gradient(135deg, #C9C9CE, #7E858F);
+  box-shadow: 0 0 0 3px rgba(126, 133, 143, .18);
 }
 .hero-actions { display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; }
 
@@ -535,7 +535,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   position: absolute;
   left: 0; right: 0; bottom: 0;
   padding: 3.5rem 1.4rem 1.1rem;
-  background: linear-gradient(180deg, transparent, rgba(7, 12, 22, .92));
+  background: linear-gradient(180deg, transparent, rgba(227, 217, 196, .92));
   font-size: .78rem;
   letter-spacing: .06em;
   color: var(--cream-2);
@@ -631,13 +631,13 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   left: 50%; bottom: 6%;
   width: 46%; height: 16px;
   transform: translateX(-50%);
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, .55), transparent 72%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(26, 23, 16, .28), transparent 72%);
   filter: blur(6px);
 }
 .botella {
   width: auto;
   height: clamp(230px, 30vw, 300px);
-  filter: drop-shadow(0 22px 34px rgba(0, 0, 0, .5));
+  filter: drop-shadow(0 22px 34px rgba(26, 23, 16, .22));
   transition: transform .9s var(--ease-out);
 }
 .gin:hover .botella { transform: translateY(-8px) rotate(-1.2deg); }
@@ -717,7 +717,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   border-radius: 100px;
   font-size: .78rem;
   color: var(--cream);
-  background: rgba(242, 235, 218, .03);
+  background: rgba(26, 23, 16, .04);
 }
 .gin-serve { font-size: .92rem; color: var(--cream-2); }
 .gin-face--back .btn { margin-top: auto; align-self: flex-start; }
@@ -764,7 +764,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   transition: border-color .6s var(--ease-out), transform .7s var(--ease-out), background-color .6s var(--ease-out);
 }
 .bcard:hover {
-  border-color: rgba(201, 162, 75, .5);
+  border-color: rgba(105, 82, 30, .5);
   transform: translateY(-6px);
 }
 .bico {
@@ -925,21 +925,21 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   padding: .85rem 1rem;
   border: 1px solid var(--line);
   border-radius: 4px;
-  background: rgba(10, 17, 30, .5);
+  background: rgba(255, 252, 245, .62);
   color: var(--cream);
   font-family: var(--sans);
   font-size: .95rem;
   font-weight: 300;
   transition: border-color .4s var(--ease-out), background-color .4s var(--ease-out);
 }
-.campo input::placeholder, .campo textarea::placeholder { color: rgba(127, 143, 168, .7); }
+.campo input::placeholder, .campo textarea::placeholder { color: rgba(94, 85, 69, .85); }
 .campo input:focus, .campo textarea:focus {
   outline: none;
   border-color: var(--accent);
-  background: rgba(10, 17, 30, .8);
+  background: rgba(255, 252, 245, .9);
 }
 .campo textarea { resize: vertical; min-height: 88px; }
-.campo.is-error input, .campo.is-error textarea { border-color: #C9584B; }
+.campo.is-error input, .campo.is-error textarea { border-color: #A8382A; }
 
 .radios { display: flex; flex-wrap: wrap; gap: .5rem; }
 .radios label { cursor: pointer; }
@@ -962,7 +962,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   position: absolute;
   width: 26px; height: 26px;
   fill: none;
-  stroke: #14100A;
+  stroke: #F6F1E4;
   stroke-width: 2.4;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -976,7 +976,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
 .pedido-form.is-ok .btn-primary:hover { transform: none; }
 
 .form-nota { font-size: .78rem; color: var(--cream-3); text-align: center; }
-.form-nota.is-error { color: #E08A7E; }
+.form-nota.is-error { color: #A8382A; }
 
 /* =============================================================
    6.11 PIE
@@ -1021,7 +1021,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
   gap: .5rem;
   margin-top: 2rem;
   font-size: .72rem;
-  color: rgba(127, 143, 168, .7);
+  color: var(--cream-3);
 }
 .pie-cred a { border-bottom: 1px solid var(--line); }
 
@@ -1059,7 +1059,7 @@ html.js .portal-ask > *:nth-child(4) { animation-delay: .49s; }
     align-items: center;
     justify-content: center;
     gap: 1.8rem;
-    background: rgba(10, 17, 30, .97);
+    background: rgba(240, 232, 216, .97);
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s var(--ease-out), visibility .5s;
